@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://adityasnghofficial01-dotcom.github.io/aivorant-website/sitemap.xml

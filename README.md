@@ -1,21 +1,21 @@
-# AIVORANT ($AIVO) — Advanced Crypto Ecosystem website
+# AIVORANT ($AIVO) — Ecosystem website
 
-## Open on Android with Acode
-1. Download and extract `aivorant-crypto-ecosystem.zip` in your phone's Downloads folder.
-2. Open Acode → Open folder.
-3. Select the extracted `aivorant-crypto-ecosystem` folder and confirm.
-4. Open `index.html` → Preview / Open in browser.
+## Publish on GitHub Pages
+Upload the contents of this folder to the repository root (not the ZIP file and not a nested folder):
+- index.html
+- styles.css
+- app.js
+- favicon.svg
+- privacy.html
+- terms.html
+- robots.txt
+- sitemap.xml
 
-## Files
-- index.html — website content
-- styles.css — responsive design
-- app.js — mobile navigation and demo checklist
+Keep GitHub Pages configured to deploy from `main` and `/(root)`.
 
 ## Current scope
-This is a frontend prototype: landing page, ecosystem modules, token overview, roadmap and community portal. The checklist is stored only on the visitor's device.
+Static informational frontend: responsive homepage, ecosystem overview, token information placeholders, roadmap, community preview and browser-local checklist. Includes basic SEO metadata, favicon, privacy notice, site terms, robots file and sitemap.
 
-Not connected yet: wallet login, live blockchain/price data, shared member accounts, real leaderboard, admin panel, swap/buy functions, backend database or API.
+Not connected: wallet login, token contract, live market data, transactions, user accounts, shared community feed, contact form, admin panel, analytics or backend database. Social accounts have not been created; no unofficial or placeholder social links should be presented as official.
 
-Before launch, confirm token network, mint/contract address, supply, distribution, official social URLs, project contact, privacy policy and terms. Do not put private keys, seed phrases or secret API keys in frontend files. Do not publish unverified audit, liquidity or listing claims.
-
-Crypto assets are speculative. This website is informational only, not financial advice, and promises no returns.
+Token network, contract address, supply, audit and other token facts remain unconfirmed. Do not publish unverified claims or promise returns. Do not put private keys, recovery phrases or secret API keys in frontend files.
