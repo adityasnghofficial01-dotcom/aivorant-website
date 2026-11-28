@@ -154,9 +154,66 @@ footer a:hover {color:var(--cyan)}
   .hero {grid-template-columns:1fr;padding:65px 0;min-height:auto}
   .visual {min-height:290px}
   .grid {grid-template-columns:1fr}
+
   .token-layout {grid-template-columns:1fr}
 }
+
+/* AIVORANT mobile responsiveness fix */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+.container,
+.hero,
+.visual,
+.token-layout,
+.grid {
+  min-width: 0;
+  max-width: 100%;
+}
+
+button,
+a {
+  overflow-wrap: anywhere;
+}
+
+@media(max-width:450px) {
+  .container {
+    width: 90%;
+  }
+
+  .navbar {
+    gap: 10px;
+  }
+
+  .brand {
+    min-width: 0;
+    letter-spacing: .08em;
+  }
+
+  .hero {
+    overflow: hidden;
+  }
+
+  .core {
+    max-width: 75vw;
+  }
+
+  .token-row {
+    flex-wrap: wrap;
+  }
+}
 </style>
+
 </head>
 
 <body>
