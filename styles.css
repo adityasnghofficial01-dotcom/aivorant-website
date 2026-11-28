@@ -468,3 +468,135 @@ footer p{
   .section{width:88%}
   .token-card{padding:18px}
 }
+
+/* =====================================
+   AIVORANT MOBILE RESPONSIVE FIX
+   ===================================== */
+
+/* Prevent horizontal page overflow */
+html {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+/* Keep layout elements within viewport */
+header,
+main,
+footer,
+section,
+.hero,
+.section,
+.token-layout,
+.grid,
+.social {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* New orbital logo */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  letter-spacing: .13em;
+}
+
+.brand-logo {
+  width: 48px;
+  height: 48px;
+  display: block;
+  flex-shrink: 0;
+}
+
+footer .brand-logo {
+  width: 42px;
+  height: 42px;
+}
+
+/* Prevent long token information from overflowing */
+.token-card p {
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.token-card p strong {
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+/* Allow facts to wrap on smaller screens */
+.facts {
+  flex-wrap: wrap;
+}
+
+/* Keep orbital artwork inside the mobile viewport */
+.visual {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.visual .orbit {
+  max-width: 100%;
+}
+
+/* Prevent oversized text and links */
+h1,
+h2,
+h3,
+p,
+a {
+  overflow-wrap: break-word;
+}
+
+/* Responsive mobile adjustments */
+@media (max-width: 450px) {
+  header {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .brand-logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .hero {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .visual {
+    overflow: hidden;
+  }
+
+  .o1 {
+    width: min(300px, 95%);
+  }
+
+  .o2 {
+    width: min(270px, 90%);
+  }
+
+  .facts {
+    gap: 14px;
+  }
+
+  .token-card {
+    min-width: 0;
+  }
+
+  .social {
+    overflow-wrap: anywhere;
+  }
+
+  footer {
+    overflow-wrap: anywhere;
+  }
+}
