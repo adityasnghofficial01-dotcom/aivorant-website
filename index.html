@@ -9,7 +9,7 @@
 <meta name="description" content="Explore AIVORANT ($AIVO), a proposed digital asset ecosystem focused on useful tools, transparent information and community-led development.">
 <meta name="robots" content="index,follow">
 
-<meta name="google-site-verification" content="tUziEpNcFiBSvK1fL1NbDx5mLqXQNmBAKE37DugyQXY" />
+<meta name="google-site-verification" content="tUziEpNcFiBSvK1fL1NbDx5mLqXQNmBAKE37DugyQXY">
 
 <link rel="canonical" href="https://adityasnghofficial01-dotcom.github.io/aivorant-website/">
 
@@ -21,10 +21,299 @@
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B1120'/%3E%3Cpath d='M32 9L10 54H21L32 30L43 54H54Z' fill='%2300F0FF'/%3E%3Cpath d='M9 44C23 57 43 52 56 29' fill='none' stroke='%238B5CF6' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
 
-<link rel="stylesheet" href="styles.css">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <title>AIVORANT ($AIVO) — Ecosystem</title>
+
+<style>
+:root {
+  --bg:#080b14;
+  --panel:#101827;
+  --cyan:#00f0ff;
+  --violet:#8b5cf6;
+  --white:#f8fafc;
+  --muted:#94a3b8;
+  --border:rgba(148,163,184,.17);
+}
+* {box-sizing:border-box}
+html {scroll-behavior:smooth;scroll-padding-top:90px}
+body {
+  margin:0;background:var(--bg);color:var(--white);
+  font-family:Manrope,Arial,sans-serif;line-height:1.65;
+}
+a {color:inherit;text-decoration:none}
+button {font:inherit}
+.container {width:min(1120px,90%);margin:auto}
+header {
+  position:sticky;top:0;z-index:10;
+  background:rgba(8,11,20,.93);
+  border-bottom:1px solid var(--border);
+  backdrop-filter:blur(15px);
+}
+.navbar {
+  min-height:76px;display:flex;align-items:center;
+  justify-content:space-between;gap:20px;
+}
+.brand {display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.12em}
+.brand-mark {
+  width:42px;height:42px;border-radius:13px;
+  display:grid;place-items:center;
+  background:linear-gradient(145deg,#102d42,#17132e);
+  color:var(--cyan);font-size:25px;
+  border:1px solid rgba(0,240,255,.35);
+}
+nav {display:flex;align-items:center;gap:25px}
+nav a {font-size:13px;color:var(--muted)}
+nav a:hover {color:var(--cyan)}
+.menu {
+  display:none;background:transparent;color:white;
+  border:1px solid var(--border);padding:8px 12px;border-radius:9px;
+}
+.hero {
+  min-height:650px;display:grid;grid-template-columns:1.1fr .9fr;
+  align-items:center;gap:35px;padding:80px 0;
+}
+.eyebrow {
+  color:var(--cyan);font:12px "DM Mono",monospace;
+  letter-spacing:.2em;text-transform:uppercase;
+}
+h1 {font-size:clamp(42px,7vw,76px);line-height:1.04;margin:18px 0}
+.gradient {
+  background:linear-gradient(90deg,var(--cyan),#a78bfa);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p {color:var(--muted);max-width:570px}
+.actions {display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+.btn {
+  padding:12px 19px;border-radius:10px;font-weight:800;
+  font-size:13px;display:inline-block;
+}
+.primary {background:var(--cyan);color:#061019}
+.secondary {border:1px solid var(--border);color:var(--white)}
+.visual {display:grid;place-items:center;min-height:360px;overflow:hidden}
+.core {
+  width:min(290px,75vw);aspect-ratio:1;border-radius:50%;
+  display:grid;place-items:center;position:relative;
+  background:radial-gradient(circle,#12334b 0%,#11172d 40%,#080b14 72%);
+  box-shadow:0 0 75px rgba(0,240,255,.13);
+}
+.core:before,.core:after {
+  content:"";position:absolute;inset:-22px;border:1px solid rgba(0,240,255,.45);
+  border-radius:50%;transform:rotateX(65deg);
+}
+.core:after {inset:-42px;border-color:rgba(139,92,246,.55);transform:rotateY(65deg)}
+.core span {
+  font-size:130px;font-weight:800;color:var(--cyan);
+  text-shadow:0 0 35px rgba(0,240,255,.55);
+}
+section {padding:78px 0;border-top:1px solid var(--border)}
+.section-head {max-width:650px;margin-bottom:30px}
+h2 {font-size:clamp(29px,5vw,43px);line-height:1.15;margin:10px 0}
+.section-head p,.muted {color:var(--muted)}
+.grid {display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card {
+  background:linear-gradient(145deg,#121d2d,#0c1320);
+  border:1px solid var(--border);border-radius:17px;padding:24px;
+}
+.card h3 {margin:5px 0 9px}
+.card p {font-size:14px;color:var(--muted)}
+.number {font:12px "DM Mono",monospace;color:var(--cyan)}
+.token-layout {display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.token-row {
+  display:flex;justify-content:space-between;gap:14px;
+  border-bottom:1px solid var(--border);padding:13px 0;font-size:14px;
+}
+.token-row span {color:var(--muted)}
+.notice {
+  border:1px solid rgba(0,240,255,.25);border-radius:13px;
+  padding:16px;color:var(--muted);font-size:13px;
+}
+.roadmap {display:grid;gap:14px}
+.phase {display:flex;gap:18px;align-items:flex-start}
+.dot {
+  width:12px;height:12px;border-radius:50%;
+  background:var(--cyan);margin-top:8px;flex-shrink:0;
+  box-shadow:0 0 15px var(--cyan);
+}
+footer {padding:35px 0;border-top:1px solid var(--border)}
+.footer-inner {
+  display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+}
+footer p,footer a {font-size:12px;color:var(--muted)}
+footer a:hover {color:var(--cyan)}
+@media(max-width:760px) {
+  .menu {display:block}
+  nav {
+    display:none;position:absolute;top:76px;left:0;right:0;
+    background:#0c1320;padding:20px 5%;
+    border-bottom:1px solid var(--border);
+    flex-direction:column;align-items:flex-start;
+  }
+  nav.open {display:flex}
+  .hero {grid-template-columns:1fr;padding:65px 0;min-height:auto}
+  .visual {min-height:290px}
+  .grid {grid-template-columns:1fr}
+  .token-layout {grid-template-columns:1fr}
+}
+</style>
 </head>
+
+<body>
+<header>
+  <div class="container navbar">
+    <a class="brand" href="#home">
+      <span class="brand-mark">A</span>
+      <span>AIVORANT</span>
+    </a>
+    <button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#token">AIVO Token</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="community.html">Community</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <div class="container hero">
+    <div>
+      <div class="eyebrow">A proposed digital asset ecosystem</div>
+      <h1>Intelligence<br><span class="gradient">Without Limits.</span></h1>
+      <p>
+        AIVORANT is an early-stage concept focused on useful digital tools,
+        transparent information and community-led development.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#ecosystem">Explore Ecosystem</a>
+        <a class="btn secondary" href="community.html">Visit Community</a>
+      </div>
+    </div>
+    <div class="visual" aria-label="AIVORANT abstract visual">
+      <div class="core"><span>A</span></div>
+    </div>
+  </div>
+
+  <section id="ecosystem">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">The ecosystem</div>
+        <h2>Built around <span class="gradient">useful ideas.</span></h2>
+        <p>These are conceptual areas under exploration, not currently available products.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="number">01 / TOOLS</div>
+          <h3>Digital Tools</h3>
+          <p>Exploring practical tools and experiences for digital communities.</p>
+        </article>
+        <article class="card">
+          <div class="number">02 / COMMUNITY</div>
+          <h3>Community</h3>
+          <p>Sharing development updates and building transparent communication.</p>
+        </article>
+        <article class="card">
+          <div class="number">03 / RESEARCH</div>
+          <h3>Research</h3>
+          <p>Learning about responsible technology and digital asset infrastructure.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="token">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Token information</div>
+        <h2>Meet <span class="gradient">$AIVO</span></h2>
+        <p>Proposed token concept. Details are not yet independently verified.</p>
+      </div>
+      <div class="token-layout">
+        <div class="card">
+          <div class="token-row"><span>Project</span><strong>AIVORANT</strong></div>
+          <div class="token-row"><span>Symbol</span><strong>$AIVO</strong></div>
+          <div class="token-row"><span>Network</span><strong>Not confirmed</strong></div>
+          <div class="token-row"><span>Contract address</span><strong>Not published</strong></div>
+          <div class="token-row"><span>Supply</span><strong>Not confirmed</strong></div>
+        </div>
+        <div class="notice">
+          <strong>Important information</strong>
+          <p>This website is informational only. It does not provide token sales,
+          trading, wallet connections or investment services. No returns or
+          financial outcomes are promised. Verify any future project details
+          through official announcements.
+        </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Development direction</div>
+        <h2>Roadmap</h2>
+        <p>Indicative areas of work. Dates and delivery commitments have not been announced.</p>
+      </div>
+      <div class="card roadmap">
+        <div class="phase"><span class="dot"></span><div><strong>Phase 01 — Foundation</strong><p class="muted">Website, project information and basic documentation.</p></div></div>
+        <div class="phase"><span class="dot"></span><div><strong>Phase 02 — Research</strong><p class="muted">Explore technical options and review project requirements.</p></div></div>
+        <div class="phase"><span class="dot"></span><div><strong>Phase 03 — Community</strong><p class="muted">Publish updates and gather feedback through official channels when available.</p></div></div>
+        <div class="phase"><span class="dot"></span><div><strong>Phase 04 — Evaluation</strong><p class="muted">Assess feasibility before announcing any implementation.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Stay informed</div>
+        <h2>Follow the development.</h2>
+        <p>Official social channels will be listed here after they are created and verified.</p>
+        <a class="btn secondary" href="community.html">Community Updates</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>
+      <a class="brand" href="#home"><span class="brand-mark">A</span><span>AIVORANT</span></a>
+      <p>Intelligence Without Limits.</p>
+      <p>© <span id="year">2026</span> AIVORANT. Informational project website.</p>
+    </div>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      &nbsp; · &nbsp;
+      <a href="terms.html">Terms of Use</a>
+      &nbsp; · &nbsp;
+      <a href="community.html">Community</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const menu = document.getElementById('menu');
+const nav = document.getElementById('nav');
+
+if (menu && nav) {
+  menu.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    menu.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menu.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
