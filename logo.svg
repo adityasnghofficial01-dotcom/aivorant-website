@@ -1,0 +1,17 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="a" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#00F0FF"/>
+      <stop offset="0.55" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="orbit" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00F0FF"/>
+      <stop offset="1" stop-color="#C084FC"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="94" height="94" rx="23" fill="#0B1120"/>
+  <path d="M50 17 L19 79 H34 L50 47 L66 79 H81 Z" fill="url(#a)"/>
+  <path d="M19 65 C37 83 66 77 82 48 C69 57 49 62 28 57" fill="none" stroke="url(#orbit)" stroke-width="5" stroke-linecap="round"/>
+</svg>
